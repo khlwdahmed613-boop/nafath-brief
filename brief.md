@@ -34,5 +34,7 @@ Anonymization and pseudonymization are two methods used to protect personal data
 Resource: GDPR – Recital 26: Not Applicable to Anonymous Data – https://gdpr-info.eu/recitals/no-26/
 
 ## Misconception in My Track
+A common misconception is that prompt injection only happens when an attacker sends malicious instructions directly to an AI assistant. This is incorrect because prompt injection can also be indirect. For example, a government AI assistant might retrieve a webpage containing hidden instructions that try to change its behavior. The assistant could mistakenly treat those instructions as commands instead of untrusted content. The OWASP resource, under the section “Description,” explains both direct and indirect prompt injection. Therefore, protecting the assistant requires more than filtering user messages; developers must also treat retrieved content as untrusted and limit the assistant’s permissions.
 
 ## Open Question
+How can a government agency test whether its AI chat assistant can detect indirect prompt injection attacks hidden in official-looking documents before the assistant is released to citizens?
