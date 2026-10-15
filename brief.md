@@ -19,10 +19,19 @@ App Transport Security (ATS) helps protect communication between the government 
 Resource: Apple Developer – App Transport Security – https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity
 
 ## Networking
+IPv4 and IPv6 are Internet Protocol versions used to identify devices and support communication across networks. IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses, providing a much larger address space. For the government AI assistant, IPv6 can help support a growing number of citizens’ devices and connected services without relying as heavily on address sharing. However, the agency must still ensure that its networks and servers support IPv6 correctly.
+
+Resource: RFC 8200 – Internet Protocol, Version 6 (IPv6) Specification – https://www.rfc-editor.org/rfc/rfc8200.html
 
 ## Cybersecurity
+Prompt injection is a security risk for the government AI assistant because attackers may try to manipulate its responses. Direct prompt injection occurs when an attacker sends malicious instructions directly to the assistant. Indirect prompt injection occurs when harmful instructions are hidden in external content that the assistant reads. Two important mitigations are limiting the assistant’s permissions through least-privilege access and validating its outputs before they are used in sensitive operations.
+
+Resource: OWASP – LLM01:2025 Prompt Injection – https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 
 ## Data
+Anonymization and pseudonymization are two methods used to protect personal data. Anonymization removes identifying information so that individuals cannot reasonably be identified again. Pseudonymization replaces identifying details with codes or other identifiers, but individuals may still be identified using additional information. For the government AI assistant, properly anonymized conversation data can fall outside the scope of the GDPR, while pseudonymized data remains personal data because re-identification is still possible.
+
+Resource: GDPR – Recital 26: Not Applicable to Anonymous Data – https://gdpr-info.eu/recitals/no-26/
 
 ## Misconception in My Track
 
